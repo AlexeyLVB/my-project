@@ -1,0 +1,57 @@
+<div>
+  <h1>
+    <strong>{{genTitleName}}</strong>
+  </h1>
+  <h4>
+    <mark>
+    Welcome, <strong>{{profileName}}</strong>!
+    </mark>
+  </h4>
+  <br>
+  <h4>
+    <button class="btn btn-danger"(click)="openLearning()">Learning</button>
+    <form *ngIf=isOpenOne>
+      <br>
+      <div class="form-group">
+      <button class="btn btn-danger"(click)="learning">Topic and section</button>
+      <br>
+      <br>
+      <button class="btn btn-danger"(click)="learning">Topic task</button>
+      </div>     
+    </form>
+  </h4>
+  <br>
+  <h4>
+    <strong>
+      <button class="btn btn-warning"(click)="openTask()">Test tasks</button>
+    </strong>
+    <form *ngIf=isOpenTwo>
+      <br>
+    <div class="form-group">
+    <button class="btn btn-warning"(click)="testTask">By task number</button>
+    <br>
+    <br>
+    <button class="btn btn-warning"(click)="testTask">Exam</button>
+    <br>
+    <br>
+    <button class="btn btn-warning"(click)="testTask">Marathon</button>
+    </div>
+    </form>
+  </h4>
+  <br>
+  <h4>
+    <strong>
+    <button class="btn btn-success"(click)="openInfo()">Helpful info</button>
+    </strong>
+    <form *ngIf=isOpenThree>
+      <br>
+    <div class="form-group">
+    <button class="btn btn-success"(click)="helpInfo">Trafic rules</button>
+    <br>
+    <br>
+    <button class="btn btn-success"(click)="helpInfo">Exam information</button>
+    <br>
+    <br>
+    <button class="btn btn-success"(click)="helpInfo">Useful information</button>
+</div>
+    
