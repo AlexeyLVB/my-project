@@ -4,54 +4,55 @@
   </h1>
   <h4>
     <mark>
-    Welcome, <strong>{{profileName}}</strong>!
+    Добро пожаловать, <strong>{{profileName}}</strong>!
     </mark>
   </h4>
   <br>
+  <br>
   <h4>
-    <button class="btn btn-danger"(click)="openLearning()">Learning</button>
+    <button class="btn btn-danger"(click)="openLearning()">Обучение</button>
     <form *ngIf=isOpenOne>
       <br>
       <div class="form-group">
-      <button class="btn btn-danger"(click)="learning">Topic and section</button>
+      <button class="btn btn-danger"(click)="learning">{{topicsAndSections}}</button>
       <br>
       <br>
-      <button class="btn btn-danger"(click)="learning">Topic task</button>
+      <button class="btn btn-danger"(click)="learning">{{topicTasks}}</button>
       </div>     
     </form>
   </h4>
   <br>
   <h4>
     <strong>
-      <button class="btn btn-warning"(click)="openTask()">Test tasks</button>
+      <button class="btn btn-warning"(click)="openTask()">Тестовые задания</button>
     </strong>
     <form *ngIf=isOpenTwo>
       <br>
     <div class="form-group">
-    <button class="btn btn-warning"(click)="testTask">By task number</button>
+    <button class="btn btn-warning"(click)="testTask">{{byTaskNumber}}</button>
     <br>
     <br>
-    <button class="btn btn-warning"(click)="testTask">Exam</button>
+    <button class="btn btn-warning"(click)="testTask">{{exam}}</button>
     <br>
     <br>
-    <button class="btn btn-warning"(click)="testTask">Marathon</button>
+    <button class="btn btn-warning"(click)="testTask">{{marathon}}</button>
     </div>
     </form>
   </h4>
   <br>
   <h4>
     <strong>
-    <button class="btn btn-success"(click)="openInfo()">Helpful info</button>
+    <button class="btn btn-success"(click)="openInfo()">Полезная информация</button>
     </strong>
     <form *ngIf=isOpenThree>
       <br>
     <div class="form-group">
-    <button class="btn btn-success"(click)="helpInfo">Trafic rules</button>
+    <button class="btn btn-success"(click)="helpInfo">{{traficRules}}</button>
     <br>
     <br>
-    <button class="btn btn-success"(click)="helpInfo">Exam information</button>
+    <button class="btn btn-success"(click)="helpInfo">{{examInfo}}</button>
     <br>
     <br>
-    <button class="btn btn-success"(click)="helpInfo">Useful information</button>
+    <button class="btn btn-success"(click)="helpInfo">{{usefulInfo}}</button>
 </div>
     

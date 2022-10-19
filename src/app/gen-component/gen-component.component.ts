@@ -6,45 +6,41 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gen-component.component.css']
 })
 export class GenComponentComponent implements OnInit {
-  genTitleName:string = 'Application name';
+    genTitleName:string = '[Название приложения]';
     profileName!: string;
-    topicsAndSections!: string;
-    topicTasks!: string;
-    byTaskNumber!: string;
-    exam!: string;
-    marathon!: string;
-    traficRules!: string;
-    examInfo!: string;
-    usefulInfo!: string;
+    topicsAndSections: string = "Темы и разделы";
+    topicTasks: string = "Задания после раздела";
+    byTaskNumber: string = "По номеру вопроса";
+    exam: string = "Экзамен";
+    marathon: string = "Марафон";
+    traficRules: string = "Правила дорожного движения";
+    examInfo: string = "Информация об экзамене";
+    usefulInfo: string = "Полезная информация";
   
   isOpenTwo: any;
   isOpenOne: any;
   isOpenThree: any;
   
     learning(){
-      this.topicsAndSections = "Topic and Section";
-      this.topicTasks = "Topic task";
-  
-      
-    }
-  
+        this.topicsAndSections = "Темы и разделы";
+        this.topicTasks = "Задания после раздела";
+      }  
     testTask(){
-      this.byTaskNumber = "By task number";
-      this.exam = "Exam";
-      this.marathon = "Marathon";
+      this.byTaskNumber;
+      this.exam;
+      this.marathon;
     }
     
     helpInfo(){
-      this.traficRules = "Trafic rules";
-      this.examInfo = "Exam info";
-      this.usefulInfo = "Useful info";
+      this.traficRules;
+      this.examInfo;
+      this.usefulInfo;
     }
   
     constructor() { }
   
     ngOnInit() {
-      this.profileName = 'ProfileName';
-  
+      this.profileName = '[Имя профиля]';
     }
   
     openLearning(){
@@ -56,6 +52,4 @@ export class GenComponentComponent implements OnInit {
     openInfo(){
       this.isOpenThree=!this.isOpenThree;
     }
-  
-  
   }
