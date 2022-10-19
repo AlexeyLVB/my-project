@@ -17,9 +17,9 @@ export class GenComponentComponent implements OnInit {
     examInfo: string = "Информация об экзамене";
     usefulInfo: string = "Полезная информация";
   
-  isOpenTwo: any;
-  isOpenOne: any;
-  isOpenThree: any;
+  isOpenTwo: boolean = false;
+  isOpenOne: boolean = false;
+  isOpenThree: boolean = false;
   
     learning(){
         this.topicsAndSections = "Темы и разделы";

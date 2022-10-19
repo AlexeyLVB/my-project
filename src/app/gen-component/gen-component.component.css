@@ -1,0 +1,17 @@
+h1{
+  text-align: center;
+  background-color: mintcream;
+  font-size: 70px;
+}
+h4{
+  font-size: 40px;
+}
+.btn{
+  margin-left: 15px;
+  font-size: 50px;
+}
+mark{
+  margin-left: 35px;
+  font-size: 28px;
+  background-color: rgb(90, 195, 199);
+}
