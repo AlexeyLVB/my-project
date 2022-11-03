@@ -1,1 +1,50 @@
-<p>useful-info works!</p>
+<p-splitter [style]="{'height': '950px'}" [panelSizes]="[15,80]" [minSizes]="[10,0]" styleClass="mb-5">
+  <ng-template pTemplate>
+            <app-menu></app-menu>
+  </ng-template>
+  <ng-template pTemplate>
+      <p-splitter layout="vertical" [panelSizes]="[20,100]"> 
+          <ng-template pTemplate>
+                <div>
+                  <p-breadcrumb [model] = 'items' [home] = 'home'>
+                  </p-breadcrumb> 
+                  <h1>Дополнительные сведения</h1>
+                  <p-accordion [multiple]="true">
+                      <p-accordionTab header="1. Порядок дейстивий при ДТП">
+                          <p>Многа букав</p>
+                      </p-accordionTab>
+                      <p-accordionTab header="2. Оказание первой медицинской помощи">
+                          <p>Многа букав</p>
+                      </p-accordionTab>
+                      <p-accordionTab header="3. Штрафы ПДД">
+                        <p>Многа букав</p>
+                     </p-accordionTab>
+                      <p-accordionTab header="4. Коды регионов">
+                        <p>Многа букав</p>
+                    </p-accordionTab>
+                    <p-accordionTab header="5. Обслуживание автомобиля">
+                      <p>Многа букав</p>
+                    </p-accordionTab>
+                    <p-accordionTab header="6. Перечень неисправностей ТС">
+                      <p>Многа букав</p>
+                    </p-accordionTab>
+                      <p-accordionTab header="7. Допуск ТС к эксплуатации">
+                          <p>Многа букав</p>
+                      </p-accordionTab>
+                      <p-accordionTab header="8. Обязательное страхование">
+                        <p>Многа букав</p>
+                      </p-accordionTab>
+                      <p-accordionTab header="9. Как сохранить водительское удостоверение">
+                        <p>Многа букав</p>
+                      </p-accordionTab>
+                      <p-accordionTab header="10. Федеральный закон 196">
+                        <p>Многа букав</p>
+                      </p-accordionTab>
+                  </p-accordion>
+    
+                </div>
+          </ng-template>
+      </p-splitter>
+  </ng-template>
+</p-splitter>
+<div>
