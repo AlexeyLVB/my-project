@@ -1,1 +1,43 @@
-<p>sign-in works!</p>
+<p-splitter [style]="{'height': '950px'}" [panelSizes]="[15,80]" [minSizes]="[10,0]" styleClass="mb-5">
+  <ng-template pTemplate>
+      <div class="col flex align-items-center justify-content-center">
+        <div class="general">
+          <div class="menu-screen">
+            <app-menu></app-menu>
+          </div>
+        </div>
+      </div>
+  </ng-template>
+  <ng-template pTemplate>
+      <p-splitter layout="vertical" [panelSizes]="[15,85]">
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">
+              <div>
+                <p-breadcrumb [model] = 'items' [home] = 'home'></p-breadcrumb> 
+                  <div>
+                    <h1>Войти в аккаунт</h1>
+                      <div class="grid p-fluid">
+                          <div class="col-12 md:col-4">
+                              <div class="p-inputgroup">
+                                  <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                                  <input type="text" pInputText placeholder="Логин">         
+                              </div>
+                          </div>
+                      <div class="card">  
+                        <h1></h1>
+                        <p-password [(ngModel)]="value" [toggleMask]="true" placeholder="Пароль"></p-password>  
+                    </div>
+                    <h1></h1>
+                    <p-button label="Войти"></p-button>
+                    <h1></h1>
+                    <button pButton type="button" label="Зарегистрироваться" class="p-button-secondary"></button>
+                  </div>
+                </div>
+              </div>
+            <div>  
+          </div>
+        </div>
+        </ng-template>
+      </p-splitter>
+  </ng-template>
+</p-splitter>
