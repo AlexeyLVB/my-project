@@ -1,1 +1,27 @@
-<p>marathon works!</p>
+<p-splitter [style]="{'height': '950px'}" [panelSizes]="[15,80]" [minSizes]="[10,0]" styleClass="mb-5">
+  <ng-template pTemplate>
+            <app-menu></app-menu>
+  </ng-template>
+  <ng-template pTemplate>
+      <p-splitter layout="vertical" [panelSizes]="[20,100]"> 
+          <ng-template pTemplate>
+                <div>
+                  <p-breadcrumb [model] = 'items' [home] = 'home'>
+                  </p-breadcrumb> 
+                  <h1>Марафон</h1>
+                  <h2>Марафон состоит из 800 вопросов в случайном порядке.</h2>
+                  <h2>Хотите начать?</h2>
+                  <div>
+                    <button pButton  type="button" label = "Начать марафон" class="p-button-outlined"></button>
+                  </div>
+                  <p></p>
+                  <div>
+                    <button pButton  type="button" label = "Продолжить марафон" class="p-button-outlined"></button>
+                  </div>
+                  <p-chart type="doughnut" [data]="data" width="350"></p-chart>
+                </div>
+          </ng-template>
+      </p-splitter>
+  </ng-template>
+</p-splitter>
+<div>
