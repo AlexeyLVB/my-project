@@ -18,10 +18,6 @@ export class AccountComponent implements OnInit {
   ngOnInit(): void {
     this.items = [
       {
-        label: 'Профиль',
-        routerLink: '/AccountComponent'     
-      },
-      {
         label: 'Мой профиль',
         routerLink: '/account'
       }

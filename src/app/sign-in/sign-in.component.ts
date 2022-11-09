@@ -18,10 +18,6 @@ export class SignInComponent implements OnInit {
   ngOnInit(): void {
     this.items = [
       {
-        label: 'Профиль',
-        routerLink: 'sign-in'     
-      },
-      {
         label: 'Войти в аккаунт'
       }
     ]
