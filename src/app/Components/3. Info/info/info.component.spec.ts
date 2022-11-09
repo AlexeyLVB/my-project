@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { GenComponentComponent } from './gen-component.component';
 
-describe('GenComponentComponent', () => {
-  let component: GenComponentComponent;
-  let fixture: ComponentFixture<GenComponentComponent>;
+import { InfoComponent } from './info.component';
+
+describe('InfoComponent', () => {
+  let component: InfoComponent;
+  let fixture: ComponentFixture<InfoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GenComponentComponent ]
+      declarations: [ InfoComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GenComponentComponent);
+    fixture = TestBed.createComponent(InfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { GenComponentComponent } from './gen-component.component';
 
-describe('GenComponentComponent', () => {
-  let component: GenComponentComponent;
-  let fixture: ComponentFixture<GenComponentComponent>;
+import { TopicTaskComponent } from './topic-task.component';
+
+describe('TopicTaskComponent', () => {
+  let component: TopicTaskComponent;
+  let fixture: ComponentFixture<TopicTaskComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GenComponentComponent ]
+      declarations: [ TopicTaskComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GenComponentComponent);
+    fixture = TestBed.createComponent(TopicTaskComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

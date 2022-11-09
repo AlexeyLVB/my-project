@@ -1,0 +1,30 @@
+<p-splitter [style]="{'height': '950px'}" [panelSizes]="[15,80]" [minSizes]="[10,0]" styleClass="mb-5">
+  <ng-template pTemplate>
+      <div class="col flex align-items-center justify-content-center">
+        <div class="general">
+          <div class="menu-screen">
+            <app-menu></app-menu>
+          </div>
+        </div>
+      </div>
+  </ng-template>
+  <ng-template pTemplate>
+      <p-splitter layout="vertical" [panelSizes]="[15,85]">
+          <ng-template pTemplate>
+              <div class="col flex align-items-center justify-content-center">
+                <div>
+                  <p-breadcrumb [model] = 'items' [home] = 'home'></p-breadcrumb> 
+                  <h1>
+                    Задания в конце раздела
+                  </h1>
+                  <h4>
+                    Место для контента
+                  </h4>
+                </div>
+              </div>
+              <div>  
+              </div>
+        </ng-template>
+      </p-splitter>
+  </ng-template>
+</p-splitter>

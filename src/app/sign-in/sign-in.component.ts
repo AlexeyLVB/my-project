@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem, PrimeNGConfig } from 'primeng/api';
-import { SkeletonModule } from "primeng/skeleton";
 
 @Component({
-  selector: 'app-account',
-  templateUrl: './account.component.html',
-  styles: [':host ::ng-deep .p-password input{ width: 15rem}']
+  selector: 'app-sign-in',
+  templateUrl: './sign-in.component.html',
+  styleUrls: ['./sign-in.component.css']
 })
+export class SignInComponent implements OnInit {
 
-export class AccountComponent implements OnInit {
-  
+  value!: string;
+
   items: MenuItem[] = [];
   home!: MenuItem;
 
@@ -19,14 +19,12 @@ export class AccountComponent implements OnInit {
     this.items = [
       {
         label: 'Профиль',
-        routerLink: '/AccountComponent'     
+        routerLink: 'sign-in'     
       },
       {
-        label: 'Мой профиль',
-        routerLink: '/account'
+        label: 'Войти в аккаунт'
       }
     ]
     this.home = {icon: 'pi pi-home', routerLink: '/'};
   }
-
 }

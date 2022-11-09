@@ -1,12 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { MenuItem, PrimeNGConfig } from 'primeng/api';
+import { MenuItemContent } from 'primeng/menu';
+import { DatePipe } from "@angular/common";
+import { Observable, timer } from 'rxjs';
+import { map } from "rxjs/operators";
+import { TabMenuModule } from "primeng/tabmenu";
+import { Button } from 'primeng/button';
 
 @Component({
   selector: 'app-gen-component',
   templateUrl: './gen-component.component.html',
-  styleUrls: ['./gen-component.component.css']
+  styleUrls: ['./gen-component.component.scss']
 })
 export class GenComponentComponent implements OnInit {
-    genTitleName:string = '[Название приложения]';
+    genTitleName:string = 'Крутое название приложения';
     profileName!: string;
     topicsAndSections: string = "Темы и разделы";
     topicTasks: string = "Задания после раздела";
@@ -15,11 +22,15 @@ export class GenComponentComponent implements OnInit {
     marathon: string = "Марафон";
     traficRules: string = "Правила дорожного движения";
     examInfo: string = "Информация об экзамене";
-    usefulInfo: string = "Полезная информация";
-  
-  isOpenTwo: boolean = false;
-  isOpenOne: boolean = false;
-  isOpenThree: boolean = false;
+    usefulInfo: string = "Дополнительные сведения";
+      
+    isOpenTwo: boolean = false;
+    isOpenOne: boolean = false;
+    isOpenThree: boolean = false;
+
+
+    items: MenuItem[] = [];
+    home!: MenuItem;
   
     learning(){
         this.topicsAndSections = "Темы и разделы";
@@ -36,11 +47,16 @@ export class GenComponentComponent implements OnInit {
       this.examInfo;
       this.usefulInfo;
     }
+
+  public dateTime: Observable<Date> = timer(0.1000).pipe(map(() =>  new Date()));
   
-    constructor() { }
+    constructor() {
+  }
   
+    
     ngOnInit() {
       this.profileName = '[Имя профиля]';
+      this.home = {icon: 'pi pi-home', routerLink: '/'};
     }
   
     openLearning(){
@@ -52,4 +68,4 @@ export class GenComponentComponent implements OnInit {
     openInfo(){
       this.isOpenThree=!this.isOpenThree;
     }
-  }
+}

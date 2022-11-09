@@ -1,0 +1,99 @@
+<p-splitter [style]="{'height': '950px'}" [panelSizes]="[15,80]" [minSizes]="[10,0]" styleClass="mb-5">
+  <ng-template pTemplate>
+            <app-menu></app-menu>
+  </ng-template>
+  <ng-template pTemplate>
+      <p-splitter layout="vertical" [panelSizes]="[20,100]"> 
+          <ng-template pTemplate>
+                <div>
+                  <p-breadcrumb [model] = 'items' [home] = 'home'>
+                  </p-breadcrumb> 
+                  <p-fieldset legend = "Задания по номеру вопроса">
+                    <div class="button">
+                    <div>
+                        <p-button  type="button" label="1"></p-button>
+                        <p-button  type="button" label="2"></p-button>
+                        <p-button  type="button" label="3"></p-button>
+                        <p-button  type="button" label="4"></p-button>   
+                        <p-button  type="button" label="5"></p-button>   
+                        <p-button  type="button" label="6"></p-button>
+                        <p-button  type="button" label="7"></p-button>
+                        <p-button  type="button" label="8"></p-button>
+                        <p-button  type="button" label="9"></p-button>  
+                        <p-button  type="button" label="10"></p-button> 
+                    </div>  
+                      <div>
+                        <p-button  type="button" label="11"></p-button>
+                        <p-button  type="button" label="12"></p-button>
+                        <p-button  type="button" label="13"></p-button>
+                        <p-button  type="button" label="14"></p-button>
+                        <p-button  type="button" label="15"></p-button>                                              
+                        <p-button  type="button" label="16"></p-button>
+                        <p-button  type="button" label="17"></p-button>
+                        <p-button  type="button" label="18"></p-button>
+                        <p-button  type="button" label="19"></p-button>   
+                        <p-button  type="button" label="20"></p-button>   
+                      </div>
+                    </div>
+                  </p-fieldset>
+                  <p-fieldset legend = "Задания по номеру билета">
+                    <div class="button">
+                      <div>
+                        <p-button  type="button" label="1"></p-button>
+                        <p-button  type="button" label="2"></p-button>
+                        <p-button  type="button" label="3"></p-button>
+                        <p-button  type="button" label="4"></p-button>   
+                        <p-button  type="button" label="5"></p-button>   
+                        <p-button  type="button" label="6"></p-button>
+                        <p-button  type="button" label="7"></p-button>
+                        <p-button  type="button" label="8"></p-button>
+                        <p-button  type="button" label="9"></p-button>  
+                        <p-button  type="button" label="10"></p-button>    
+                      </div>
+                      <div>
+                        <p-button  type="button" label="11"></p-button>
+                        <p-button  type="button" label="12"></p-button>
+                        <p-button  type="button" label="13"></p-button>
+                        <p-button  type="button" label="14"></p-button>
+                        <p-button  type="button" label="15"></p-button>                                              
+                        <p-button  type="button" label="16"></p-button>
+                        <p-button  type="button" label="17"></p-button>
+                        <p-button  type="button" label="18"></p-button>
+                        <p-button  type="button" label="19"></p-button>   
+                        <p-button  type="button" label="20"></p-button>   
+                      </div>
+                      <div>
+                        <p-button  type="button" label="21"></p-button>
+                        <p-button  type="button" label="22"></p-button>
+                        <p-button  type="button" label="23"></p-button>
+                        <p-button  type="button" label="24"></p-button>
+                        <p-button  type="button" label="25"></p-button>                                              
+                        <p-button  type="button" label="26"></p-button>
+                        <p-button  type="button" label="27"></p-button>
+                        <p-button  type="button" label="28"></p-button>
+                        <p-button  type="button" label="29"></p-button>   
+                        <p-button  type="button" label="30"></p-button>   
+                      </div>
+                      <div>
+                        <p-button  type="button" label="31"></p-button>
+                        <p-button  type="button" label="32"></p-button>
+                        <p-button  type="button" label="33"></p-button>
+                        <p-button  type="button" label="34"></p-button>
+                        <p-button  type="button" label="35"></p-button>                                              
+                        <p-button  type="button" label="36"></p-button>
+                        <p-button  type="button" label="37"></p-button>
+                        <p-button  type="button" label="38"></p-button>
+                        <p-button  type="button" label="39"></p-button>   
+                        <p-button  type="button" label="40"></p-button>   
+                      </div>
+                    </div>
+                  </p-fieldset>
+                  <div>
+                    <p-chart type="doughnut" [data]="data" width="350"></p-chart>                
+                  </div>
+                </div>
+          </ng-template>
+      </p-splitter>
+  </ng-template>
+</p-splitter>
+<div>
