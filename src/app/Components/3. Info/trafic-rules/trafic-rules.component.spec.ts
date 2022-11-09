@@ -20,4 +20,8 @@ describe('TraficRulesComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> bc66d537f94900a0b969bd8885fa3bbb89ccd98d

@@ -26,4 +26,8 @@ export class TraficRulesComponent implements OnInit {
     this.home = {icon: 'pi pi-home', routerLink: '/'};
   }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bc66d537f94900a0b969bd8885fa3bbb89ccd98d
