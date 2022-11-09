@@ -25,12 +25,12 @@ export class MenuComponent implements OnInit{
           {
             label: 'Мой профиль',
             icon: 'pi pi-fw pi-users',
-            routerLink: 'account'
+            routerLink: '/account'
           },
           {
             label: 'Войти в аккаунт',
             icon: 'pi pi-fw pi-user-plus',
-            routerLink: 'sign-in'
+            routerLink: '/sign-in'
           }
       ]
       },
@@ -40,11 +40,11 @@ export class MenuComponent implements OnInit{
           [
           {
             label: 'Темы и разделы',
-            routerLink: 'topics'
+            routerLink: '/topics'
           },
           {
             label: 'Задания после раздела',
-            routerLink: 'topic-task'
+            routerLink: '/topic-task'
           }
         
       ] 
@@ -55,15 +55,15 @@ export class MenuComponent implements OnInit{
         
           {
             label: 'По номеру',
-            routerLink: 'by-task-number'
+            routerLink: '/by-task-number'
           },
           {
             label: 'Экзамен',
-            routerLink:'exam'
+            routerLink:'/exam'
           },
           {
             label: 'Марафон',
-            routerLink:'marathon'
+            routerLink:'/marathon'
           }
         
       ]
@@ -73,15 +73,15 @@ export class MenuComponent implements OnInit{
         items:[
           {
             label: 'Правила дорожного движения',
-            routerLink: 'trafic-rules'
+            routerLink: '/trafic-rules'
           },
           {
             label: 'Информация об экзамене',
-            routerLink: 'exam-info'
+            routerLink: '/exam-info'
           },
           {
             label: 'Дополнительные сведения',
-            routerLink: 'useful-info'
+            routerLink: '/useful-info'
           }
         ]
       
