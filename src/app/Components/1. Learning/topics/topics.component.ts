@@ -18,7 +18,7 @@ export class TopicsComponent implements OnInit {
     this.items = [
       {
         label: 'Обучение',
-        routerLink: 'learning'     
+        routerLink: '/learning'     
       },
       {
         label: 'Темы и разделы'
