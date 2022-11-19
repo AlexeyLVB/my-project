@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
+
+//import { Entity, PrimaryGenerateColumn } from "typeorm";
+
 import { PrimeNGConfig } from 'primeng/api';
 import {AccordionModule} from 'primeng/accordion';
 import { MenuModule } from "primeng/menu";
@@ -78,9 +81,7 @@ const appRoutes: Routes =[
     TasksComponent,
     InfoComponent,
     SignInComponent,
-
-
-    AccountComponent
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
